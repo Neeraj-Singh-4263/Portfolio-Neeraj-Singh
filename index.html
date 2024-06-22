@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio - Neeraj Singh</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/56edcfe9d1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+            
+            <div class="content">
+                <p>Backend Devloper</p>
+                <h1>Hi, i'm <span>Neeraj</span><br> Singh From India, U.P.</h1>
+                <div class="buoon">
+                    <button type="button"><span></span>My Project</button>
+                    <button type="button"><span></span>My Skills</button>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="section">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img id="about-img" src="logo.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I'm Neeraj, a dedicated backend developer with a strong foundation in 
+                            SQL, Python, cloud computing, and JavaScript, with a touch of CSS expertise.
+                             My passion lies in creating efficient and scalable backend systems that power seamless user experiences.
+                              With a keen eye for detail and a drive for continuous learning, I strive to stay updated with the latest technologies and best practices in the industry.
+                               Explore my portfolio to see the projects I've worked on and how I can help bring your ideas to life.</p>
+
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                                <p class="tab-links" onclick="opentab('eduacation')">Eduacation</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Backend Devloper</span><br>Designing Backend databases and ER Diagram</li>
+                                    <li><span>Web Devlopment</span><br>Worked on JavaScript, backend connectivity and css</li>
+                                    <li><span>Cloud computing</span><br>Server management and also worked on cmd line</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experiences">
+                                <ul>
+                                    <li><span>2024 - Current</span><br>Making project as freelincer </li>
+                                    <li><span>2022 - 2023</span><br>Sumer training in TCYbill learn python,JavaScript,html and css</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="eduacation">
+                                <ul>
+                                    <li><span>Self learned</span><br>DBMS using MySQL , Xcel , phpmyadmin and ER Diagram</li>
+                                    <li><span>2021 - 2024</span><br>CS diploma From MJPGP Collage Kaushambi</li>
+                                    <li><span>2022 - 2023</span><br>Sumer training in TCYbill learn python,JavaScript,html and css</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------services---------->
+        <div id="services">
+            <div class="section">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Devlopment Projects</h2>
+                        <p>Create a web application using HTML, CSS and JavaScript for the frontend, Python(with the framework like Flask or Django) for the backend, and MySQLfor the database.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Projects</h2>
+                        <p>Showcase your ability to design, impliment and manage database with MySQL.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h2>Cloud Computing Projects</h2>
+                        <p>Create and showcase architectures for scalable and resilient applications using cloud services.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-----------portfolio--------->
+        <div id="portfolio">
+            <div class="section">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.jpg">
+                        <div class="layer">
+                            <h3>Full Stack Website</h3>
+                            <p>Website name is <span>Bike Rent Services</span>. In this web client can book rental bike and pay from it to the host.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.jpg">
+                        <div class="layer">
+                            <h3>Multiplayer Gaming</h3>
+                            <p>It is an Multiplayer console for online user can play game and enjoye with his friends. It's an Open source social gmaing console.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.jpg">
+                        <div class="layer">
+                            <h3>ER Diagram</h3>
+                            <p>There is some ER diagram created by me for showing backend progresses</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="btn"><span></span> See more </a>
+            </div>
+        </div>
+        <!--------------contact------>
+        <div id="contact">
+            <div class="section">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>nrox4263#gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7310452103</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-solid fa-square-envelope"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="mycv.txt" download class="bttn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <div class="buoon">
+                            <button type="submit"><span></span>Submit</button></div>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright ID Neeraj.</p>
+        </div>
+        
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzR6s2ceq9bl-Q4r89M8HwH2Fjs_VZDGn2TRU6uz_CdO9cZEnjFla-nSUMB9SJxDI8s/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+      },5000)
+      form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+        
+    </body>
+</html>
