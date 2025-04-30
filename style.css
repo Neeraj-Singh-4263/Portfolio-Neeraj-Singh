@@ -267,7 +267,11 @@ button:hover{
 }
 .layer h3{
     font-weight: 500;
-    margin-bottom:20px ;
+    margin-bottom:20px;
+    color: white;
+}
+.layer span{
+    color: white;
 }
 .layer a{
     margin-top: 60px;
@@ -438,7 +442,7 @@ form input, form textarea{
     }
     #services{
         padding: 30px;
-        color: rgb(171, 171, 171);
+        color: rgb(255, 255, 255);
     }
     #portfolio{
         padding: 30px;
