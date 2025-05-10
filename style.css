@@ -111,6 +111,17 @@ button{
     transition: 0.5s;
     z-index: -1;
 }
+.section button span{
+    background: aqua;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
 button:hover span{
     width: 100%;
     
@@ -301,14 +312,9 @@ button:hover{
     text-decoration: none;
     color: aqua;
     transition: color 0.5s, background 0.5s;
+    font-weight: bold;
 }
 
-
-.btn:hover{
-    color: black;
-    background: aqua;
-    z-index: +1;
-}
 /*----------contact------------*/
 #contact{
     padding: 80px;
@@ -369,14 +375,15 @@ form input, form textarea{
     text-decoration: none;
     color: aqua;
     transition: color 0.5s, background 0.5s;
+    font-weight: bold;
 }
-
 
 .bttn:hover{
     color: black;
-    background: aqua;
+    background-color: aqua;
     z-index: +1;
 }
+
 .copyright{
     width: 100%;
     text-align: center;
