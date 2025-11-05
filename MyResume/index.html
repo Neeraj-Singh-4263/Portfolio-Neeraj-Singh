@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- html2canvas (screenshot) -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <!-- jsPDF (PDF) -->
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <title>Neeraj Singh — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Decorative background blobs -->
+  <div class="bg-blob bg-blob--top"></div>
+  <div class="bg-blob bg-blob--right"></div>
+  <div class="bg-blob bg-blob--bottom"></div>
+
+  <!-- Download button -->
+  <button class="print-btn" onclick="downloadSnapshotPDF()" aria-label="Download PDF">
+  Download PDF
+</button>
+
+  <div class="page" id="resume">
+    <header class="header">
+      <h1 class="name">NEERAJ<br/>SINGH</h1>
+      <h2 class="role">Data Analyst &amp; Data Entry Enthusiast</h2>
+      <p class="summary">
+        Data analyst with a Diploma in Computer Science. Comfortable turning messy data into clean, actionable insights
+        using Python (pandas), SQL and Excel. Built dashboards in Power BI/Tableau and automated reports. Strong at
+        data cleaning, modeling and presenting results clearly.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="maincol">
+        <h3 class="section-title">Experience</h3>
+
+        <!-- Example internship; edit or duplicate -->
+        <article class="block">
+          <h4>Python Intern <span class="at">at</span> TCYBILL TECHNOLOGIES PVT. LTD</h4>
+          <div class="meta"><span class="years">Jun–Aug 2023</span> <span class="dot">•</span> <span>Remote</span></div>
+          <ul class="bullets">
+            <li>Cleaned and transformed 120k+ rows with pandas and Excel; reduced manual effort by 35%.</li>
+            <li>Built a reusable data-quality script (nulls, dupes, outliers) and shared as a GitHub repo.</li>
+            <li>Created a KPI view in Power BI (sales, returns, MoM trend) consumed by 3 stakeholders.</li>
+          </ul>
+        </article>
+
+        <h3 class="section-title">Projects</h3>
+
+        <article class="block">
+          <h4>My Portfolio</h4>
+          <p>Visit: <a href="https://neeraj-singh-4263.github.io/Portfolio-Neeraj-Singh/" target="_blank" rel="noreferrer">My Portfolio – Neeraj Singh</a></p>
+          <ul class="bullets">
+            <li>Built with HTML/CSS/JS; responsive and optimized (Lighthouse 95+).</li>
+            <li>Showcases analytics work, dashboards and ER diagrams.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h4>Analytics Dashboard Showcase</h4>
+          <p>Data Analytics Neon Dashboard – <a href="https://neeraj-singh-4263.github.io/Neon_Dashboard_Showcase/" target="_blank" rel="noreferrer">Open</a></p>
+          <ul class="bullets">
+            <li>Power BI report with 6 KPIs, drill-downs and export to CSV.</li>
+            <li>Automated refresh from CSV/MySQL using Power Query.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h4>ER Diagram Showcase</h4>
+          <p>Back-end progress and schema designs – <a href="https://neeraj-singh-4263.github.io/ER-Diagram-Showcase/" target="_blank" rel="noreferrer">Open</a></p>
+          <ul class="bullets">
+            <li>Modeled entities, relationships and constraints for inventory system.</li>
+            <li>Generated MySQL DDL; validated with sample data.</li>
+          </ul>
+        </article>
+
+        <h3 class="section-title">Education</h3>
+
+        <article class="block">
+          <h4>DIPLOMA IN COMPUTER SCIENCE &amp; ENGINEERING <span class="at">at</span> Mahatma Jyotiba Phule Government Polytechnic, Kaushambi</h4>
+          <div class="meta">
+            <span class="years">2021 — 2024</span>
+            <span class="dot">•</span>
+            <span>69%</span>
+          </div>
+          <p class="sub-meta">Completed 45 days of <strong>Python</strong> training from <strong>TCYBILL TECHNOLOGIES</strong> PVT. LTD</p>
+        </article>
+
+        <article class="block">
+          <h4>12th at UP Board</h4>
+          <div class="meta"><span class="years">2021</span> <span class="dot">•</span> <span>69%</span></div>
+        </article>
+
+        <article class="block">
+          <h4>10th at UP Board</h4>
+          <div class="meta"><span class="years">2019</span> <span class="dot">•</span> <span>73%</span></div>
+        </article>
+      </section>
+
+      <aside class="sidecol">
+        <div class="card">
+          <h3 class="section-title">Details</h3>
+          <ul class="kv">
+            <li>Prayagraj, Uttar Pradesh, India</li>
+            <li><a href="tel:91710452103">+91 71045 2103</a></li>
+            <li><a href="mailto:nrox4263@gmail.com">nrox4263@gmail.com</a></li>
+            <li><a href="https://github.com/Neeraj-Singh-4263" target="_blank" rel="noreferrer">github.com/Neeraj-Singh-4263</a></li>
+            <li><a href="https://www.linkedin.com/in/neeraj-singh-b902a2347/" target="_blank" rel="noreferrer">linkedin.com/in/neeraj-singh-b902a2347</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="section-title">Technical Stack</h3>
+          <ul class="pill-list">
+            <li>Python (pandas, numpy)</li>
+            <li>SQL (MySQL/MariaDB)</li>
+            <li>Excel (Pivot, Power Query)</li>
+            <li>Power BI, Tableau</li>
+            <li>APIs, Postman</li>
+            <li>Git &amp; GitHub</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="section-title">Certifications</h3>
+          <ul class="list">
+            <li>Python Training — TCYBILL Technologies (45 days)</li>
+            <li>Add any Google/Coursera/Udemy certificates</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="section-title">Coursework</h3>
+          <ul class="list">
+            <li>DBMS, DSA, OS, CN</li>
+            <li>Statistics for Data Analysis</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="pager">
+      
+    </footer>
+  </div>
+
+  <script>
+/*
+==========================================================
+EXACT LOOK PDF (Screenshot + Live Links) — Single A4
+- Captures the page visuals (gradients, layout)
+- Crops to .page area with padding
+- Adds clickable links for all <a> inside .page
+- Auto filename: Neeraj CV (Mon DD).pdf
+==========================================================
+*/
+
+async function downloadSnapshotPDF() {
+  const btn = document.querySelector('.print-btn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Generating PDF...'; }
+
+  const resume = document.querySelector('.page');
+  if (!resume) { console.error('Missing .page element'); if (btn){btn.disabled=false;btn.textContent='Download PDF';} return; }
+
+  // Let layout/fonts settle briefly
+  await new Promise(r => setTimeout(r, 60));
+
+  // --- 1) Measure the resume area and add padding so shadows/blobs aren't cut ---
+  const resumeRect = resume.getBoundingClientRect();
+  const pad = 24; // px around the resume
+  const crop = {
+    x: Math.max(0, Math.floor(resumeRect.left + window.scrollX - pad)),
+    y: Math.max(0, Math.floor(resumeRect.top  + window.scrollY - pad)),
+    w: Math.ceil(resumeRect.width  + pad * 2),
+    h: Math.ceil(resumeRect.height + pad * 2)
+  };
+
+  // --- 2) High-res screenshot of ONLY the resume region (includes fixed blobs) ---
+  const canvas = await html2canvas(document.body, {
+    backgroundColor: '#ffffff',
+    useCORS: true,
+    scale: 3,               // sharp
+    x: crop.x, y: crop.y, width: crop.w, height: crop.h,
+    scrollX: 0, scrollY: 0
+  });
+
+  const imgData = canvas.toDataURL('image/jpeg', 0.98);
+
+  // --- 3) Create one-page A4 PDF and place the image centered with margins ---
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+
+  const pageW = pdf.internal.pageSize.getWidth();
+  const pageH = pdf.internal.pageSize.getHeight();
+
+  const marginMM = 6; // mm
+  const maxW = pageW - marginMM * 2;
+  const maxH = pageH - marginMM * 2;
+
+  const imgWpx = canvas.width;
+  const imgHpx = canvas.height;
+  const imgRatio = imgWpx / imgHpx;
+
+  let renderW = maxW;
+  let renderH = renderW / imgRatio;
+  if (renderH > maxH) {
+    renderH = maxH;
+    renderW = renderH * imgRatio;
+  }
+  const posX = (pageW - renderW) / 2;
+  const posY = (pageH - renderH) / 2;
+
+  pdf.addImage(imgData, 'JPEG', posX, posY, renderW, renderH, undefined, 'FAST');
+
+  // --- 4) Recreate CLICKABLE LINKS on top of the image -------------------------
+  // Convert a page pixel rect (within the cropped area) to PDF mm coordinates
+  function rectPxToPdfMM(pxRect) {
+    // pxRect relative to the RESUME (not the crop)
+    const relLeft = (pxRect.left - resumeRect.left) + pad; // include pad we added
+    const relTop  = (pxRect.top  - resumeRect.top)  + pad;
+
+    // Convert px in the cropped canvas to ratios
+    const rx = relLeft / crop.w;
+    const ry = relTop  / crop.h;
+    const rw = pxRect.width  / crop.w;
+    const rh = pxRect.height / crop.h;
+
+    // Map to the placed image box in the PDF (mm)
+    return {
+      x: posX + rx * renderW,
+      y: posY + ry * renderH,
+      w: rw * renderW,
+      h: rh * renderH
+    };
+  }
+
+  // Helper: absolute URL
+  function absolutize(href) {
+    try { return new URL(href, window.location.href).href; }
+    catch { return null; }
+  }
+
+  // Collect all links inside .page that have usable hrefs
+  const anchors = Array.from(resume.querySelectorAll('a[href]')).filter(a => {
+    const href = a.getAttribute('href') || '';
+    if (!href || href.trim() === '#' ) return false;
+    const style = window.getComputedStyle(a);
+    if (style.visibility === 'hidden' || style.display === 'none') return false;
+    return true; // include http(s), mailto, tel, etc.
+  });
+
+  anchors.forEach(a => {
+    const href = a.getAttribute('href');
+    const abs = absolutize(href);
+    if (!abs) return;
+
+    // For tel:/mailto:, jsPDF link works fine with URL
+    const rect = a.getBoundingClientRect();
+    const mm = rectPxToPdfMM(rect);
+
+    // Slightly enlarge the clickable box to be generous
+    const padMM = 0.8;
+    const x = Math.max(0, mm.x - padMM);
+    const y = Math.max(0, mm.y - padMM);
+    const w = mm.w + padMM * 2;
+    const h = mm.h + padMM * 2;
+
+    pdf.link(x, y, w, h, { url: abs });
+  });
+
+  // --- 5) Save with "Neeraj CV (Mon DD).pdf" -----------------------------------
+  const dateStr = new Date().toLocaleString('en-US', { month: 'short', day: '2-digit' });
+  pdf.save(`Neeraj CV (${dateStr}).pdf`);
+
+  if (btn) { btn.disabled = false; btn.textContent = 'Download PDF'; }
+}
+</script>
+
+
+
+
+</body>
+</html>
